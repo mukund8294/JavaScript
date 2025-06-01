@@ -121,7 +121,7 @@ console.log(now - 1991 > now -2018); */
 
 
 
-const now = 2037;
+/*  const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 console.log(ageJonas,ageSarah);
@@ -136,6 +136,38 @@ console.log(x,y);
 
 const averageAge = ageJonas + ageSarah/2;
 console.log (ageJonas, ageSarah);
+*/
+
+
+
+
+
+//// Coding  Challenge #1
+
+/* const massMark = 67;
+ const heightMark = 1.73;
+ const massJohn = 72;
+ const heightJohn = 1.76;
+
+ const BMIMark = (massMark / heightMark ** 2);
+const BMIJohn = (massJohn / (heightJohn * heightJohn));
+const markHigherBMI = BMIMark > BMIJohn;
+   
+console.log(BMIJohn , BMIMark, markHigherBMI);*/
+
+
+
+/*const massMark =78 ;
+ const heightMark = 1.69;
+ const massJohn = 92;
+ const heightJohn = 1.95;
+
+ const BMIMark = (massMark / heightMark ** 2);
+const BMIJohn = (massJohn / (heightJohn * heightJohn));
+const markHigherBMI = BMIMark > BMIJohn;
+   
+console.log(BMIJohn , BMIMark, markHigherBMI);*/
+
 
 
 
