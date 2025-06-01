@@ -37,9 +37,6 @@ console.log(myFirstJob);  */
 
 
 
-
-
-
 ////// Data TYpes..
 /*let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -63,8 +60,6 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null); */
-
-
 
 
 
@@ -141,7 +136,6 @@ console.log (ageJonas, ageSarah);
 
 
 
-
 //// Coding  Challenge #1
 
 /* const massMark = 67;
@@ -167,7 +161,6 @@ const BMIJohn = (massJohn / (heightJohn * heightJohn));
 const markHigherBMI = BMIMark > BMIJohn;
    
 console.log(BMIJohn , BMIMark, markHigherBMI);*/
-
 
 
 
@@ -222,8 +215,6 @@ console.log(century);   */
 
 
 
-
-
 //  Coding Challenge #2
 
 /* const massMark = 67;
@@ -263,8 +254,6 @@ if(BMIMark> BMIJohn) {
 
 
 
-
-
    /*   // type conversion 
 const inputYear = '1991';
 console.log(Number(inputYear),inputYear);
@@ -286,7 +275,6 @@ console.log('23' /'2');
 let n = '1' + 1;    // '11'
 n= n -1;
 console.log(n);  */ 
-
 
 
 
@@ -362,9 +350,6 @@ if (favourite !== 23) console.log('Why not 23?');   */
 
 
 
-
-
-
 /// Boolean logic  ( AND  & OR )
 /*    const hasDriversLicense = true; // A
 const hasGoodVision = false // B
@@ -395,10 +380,6 @@ if (hasDriversLicense && hasGoodVision && isTired) {
 
 
 
-
-
-
-
 // Coding Challenge # 3
 
  /*  const scoreDolphins = (99+103+80)/3;
@@ -417,8 +398,6 @@ else {
     console.log('No one win the trophy');
 }
     */
-
-
 
 
 
@@ -454,7 +433,6 @@ switch (day) {
     console.log('Not a valid day!');
 }
 
- 
 
 if (day === 'monday') {
   console.log('Plan course structure');
@@ -479,7 +457,6 @@ if (day === 'monday') {
 
 
 
-
 //////////// Statements and Expressions
 /*
 3 + 4
@@ -492,7 +469,6 @@ if(23 > 10) {
 
 const me = ' mukund';
 console.log( `I'm ${2024-2005} years old ${me}`) */
-
 
 
 
@@ -521,7 +497,6 @@ console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);   */
 
 
 
-
          /// Coding Challenge #4
 /*
 const bill = 430;
@@ -529,5 +504,6 @@ const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 console.log(`The bill was ${bill}, the tip was ${tip}
   , and the total value ${ bill + tip }`);
 */
+
 
 //////////// The END ////////////////
