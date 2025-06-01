@@ -73,7 +73,7 @@ console.log(typeof null); */
 /* let age = 30;
 age = 31;
 
-const birthYear = 2006;
+const birthYear = 2005;
 // birthYear = 1990;  (Wrong)
 
 var job = 'programmer';
@@ -174,3 +174,112 @@ console.log(BMIJohn , BMIMark, markHigherBMI);*/
 
 
 
+/*const firstName = 'mukund';
+const job = 'student';
+const birthyear = 2005;
+const year = 2037 ;
+
+const mukund = "I'm" + firstName + ', a ' + ( year - birthyear ) + ' years old ' + job + '!' ;
+console.log(mukund);
+
+
+const mukundNew = `I'm ${firstName}, a ${year - birthyear} year old ${job}!`;
+console.log(mukundNew);
+
+console.log(`Just a regular string ........`);
+
+console.log('String with \n\ multiple \n\ lines');
+
+console.log( `string
+  multiple
+  lines`);  */
+
+
+
+
+
+
+ /*   const age = 15;
+
+  if(age >= 18) {
+    console.log ('mukund can start driving license ');
+  } else {
+    const yearLeft = 18 - age;
+    console.log (`mukund is too young. Wait another ${yearsLeft} :)'`)
+  }
+
+   
+  const birthyear = 2012;
+
+  let century;
+  if (birthyear <= 2000) {
+    century = 20;
+  } else {
+century = 21;
+  }
+console.log(century);   */
+  
+
+
+
+
+/* const massMark = 67;
+ const heightMark = 1.73;
+ const massJohn = 72;
+ const heightJohn = 1.76;
+
+ const BMIMark = (massMark / heightMark ** 2);
+const BMIJohn = (massJohn / (heightJohn * heightJohn));
+console.log(BMIMark,BMIJohn);
+
+
+if(BMIMark> BMIJohn) {
+  console.log("mark's BMI is higher than John's!")
+}  else {
+  console.log("John's BMI is higher than Mark's!")
+}  */
+   
+
+ /*  const massMark =78 ;
+ const heightMark = 1.69;
+ const massJohn = 92;
+ const heightJohn = 1.95;
+
+ const BMIMark = (massMark / heightMark ** 2);
+const BMIJohn = (massJohn / (heightJohn * heightJohn));
+
+console.log(BMIMark,BMIJohn);
+
+
+if(BMIMark> BMIJohn) {
+  console.log(`mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`)
+}  else {
+  console.log(`John's BMI (${BMIJohn}) is higher than Mark's(${BMIMark})!`)
+}   */
+
+
+
+
+
+
+   /*   // type conversion 
+const inputYear = '1991';
+console.log(Number(inputYear),inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+
+// type coerction
+console.log('I am' + 23 + 'years old');
+console.log('23' - '10'-3);
+console.log('23' /'2');
+
+
+
+let n = '1' + 1;    // '11'
+n= n -1;
+console.log(n);  */ 
