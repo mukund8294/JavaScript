@@ -326,11 +326,11 @@ if ( age ==18) console.log('You just become an adult :D(lo0se)');
 // output  you just become an adult :D (strict)
   */ 
 
-const age = '18';
+/*  const age = '18';
 if (age === 18 ) console.log('you just become an adult :D (strict)');
 if ( age ==18) console.log('You just become an adult :D(lo0se)');
 if ( age ==18) console.log('You just become an adult :D(lo0se)');
-// output   You just become an adult :D(lo0se)
+// output   You just become an adult :D(lo0se) */
 
 
 /*  const favourite = (prompt("What's your favourite number?"));
@@ -338,7 +338,7 @@ console.log(favourite);
 console.log(typeof favourite);  */
 
 
-const favourite = Number(prompt("What's your favourite number?"));
+/*  const favourite = Number(prompt("What's your favourite number?"));
 console.log(favourite);
 console.log(typeof favourite); 
 
@@ -354,4 +354,46 @@ if (favourite === 23 )  {  // 22 === 23 -> false
 }
 
 
-if (favourite !== 23) console.log('Why not 23?');
+if (favourite !== 23) console.log('Why not 23?');   */
+
+
+
+
+
+
+
+
+/// Boolean logic  ( AND  & OR )
+/*    const hasDriversLicense = true; // A
+const hasGoodVision = false // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+
+if (hasDriversLicense  && hasGoodVision)  {
+  console.log('mukund is able to drive!');
+} else {
+  console.log('Someone else should drive.....')
+}
+
+
+const isTired = false;  //c
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && isTired) {
+  console.log (' Sarah is able to drive!');
+
+} else {
+  console.log('Someone else should drive!');
+
+}    */
+
+
+
+
+
+
+
+  
