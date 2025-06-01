@@ -1,10 +1,10 @@
  
  
- //// Hello BUDDY , Starting Of JavaScript ............
+ //// Hello BUDDY , Start the JavaScript ............
  
  
  
- 
+ ////// Values and Variables
  /*let js = 'amazing';
   
   console. log(40+8+23-10);
@@ -40,7 +40,7 @@ console.log(myFirstJob);  */
 
 
 
-
+////// Data TYpes..
 /*let javascriptIsFun = true;
 console.log(javascriptIsFun);
 
@@ -69,7 +69,7 @@ console.log(typeof null); */
 
 
 
-
+// let, const , var   
 /* let age = 30;
 age = 31;
 
@@ -85,7 +85,7 @@ console.log(lastName);  */
 
 
 
-
+///// Basic Operators
 /* const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -120,7 +120,7 @@ console.log(now - 1991 > now -2018); */
 
 
 
-
+///// Operator Precedence
 /*  const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -173,7 +173,7 @@ console.log(BMIJohn , BMIMark, markHigherBMI);*/
 
 
 
-
+ //////// Strings and Template Literals
 /*const firstName = 'mukund';
 const job = 'student';
 const birthyear = 2005;
@@ -198,7 +198,7 @@ console.log( `string
 
 
 
-
+/////// Taking Decisions if else statements
  /*   const age = 15;
 
   if(age >= 18) {
@@ -224,7 +224,7 @@ console.log(century);   */
 
 
 
-//  Coding Challenge #3
+//  Coding Challenge #2
 
 /* const massMark = 67;
  const heightMark = 1.73;
@@ -292,7 +292,7 @@ console.log(n);  */
 
 
 
-
+//////// THe Truthy and Falsy
 /*     //5 falsy values: 0,'',undefined,null,NaN
 
 
@@ -322,7 +322,7 @@ if(height) {
 
 
 
-
+//////// The Equality Operators == vs ===
 /*  const age = 18;
 if (age === 18 ) console.log('you just become an adult :D (strict)');
 if ( age ==18) console.log('You just become an adult :D(lo0se)');
@@ -365,7 +365,6 @@ if (favourite !== 23) console.log('Why not 23?');   */
 
 
 
-
 /// Boolean logic  ( AND  & OR )
 /*    const hasDriversLicense = true; // A
 const hasGoodVision = false // B
@@ -399,8 +398,10 @@ if (hasDriversLicense && hasGoodVision && isTired) {
 
 
 
+
 // Coding Challenge # 3
-const scoreDolphins = (99+103+80)/3;
+
+ /*  const scoreDolphins = (99+103+80)/3;
 const scoreKoalas = (109+95+50)/3;
 console.log(scoreDolphins, scoreKoalas);
 
@@ -409,8 +410,124 @@ if(scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 
 } else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
     console.log('Both win the trophy');
+
 } else if (scoreDolphins == scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100);
+
 else {
     console.log('No one win the trophy');
 }
     */
+
+
+
+
+
+/////////// The switch Statements
+
+/*  const day = 'friday';
+
+switch (day) {
+  case 'monday':         // day === "monday"
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+
+  case 'friday':
+    console.log('Record videos');
+    break;
+
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+
+  default:
+    console.log('Not a valid day!');
+}
+
+ 
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+
+} else if (day === 'wednesday' || day === 'thursday') {
+  console.log('Write code examples');
+
+} else if (day === 'friday') {
+  console.log('Record videos');
+
+} else if (day === 'saturday' || day === 'sunday') {
+  console.log('Enjoy the weekend :D');
+
+} else {
+  console.log('Not a valid day!');
+}  */
+
+
+
+
+
+//////////// Statements and Expressions
+/*
+3 + 4
+1991
+true && false &&  !false
+
+if(23 > 10) {
+  const str = '23 is bigger';
+}
+
+const me = ' mukund';
+console.log( `I'm ${2024-2005} years old ${me}`) */
+
+
+
+
+
+
+/////////  The Conditional (Ternary) operator
+/*  const age = 23;
+// age >= 18 ? console.log('I like to drink wine') : console.log('I like to drink water');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine';
+
+} else {
+  drink2 = 'water';
+}
+console.log(drink2);
+
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);   */
+
+
+
+
+
+         /// Coding Challenge #4
+/*
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}
+  , and the total value ${ bill + tip }`);
+*/
+
+//////////// The END ////////////////
