@@ -65,3 +65,21 @@ console.log(age1, age2);
 
 
 
+//// Arrow functions ///
+/*
+const calAge3 = birthYear => 2040 - birthYear;
+const age3 = calcAge(1993);
+console.log(age3);
+
+const yearUnitRetirement = ( birthYear , firstName)
+ => {
+    const age = 2040 - birthYear;
+    const retirement = 65 - age;
+    //return retirement;
+return `${firstName} retires in ${retirement}
+years`;
+}
+
+console.log (yearUnitRetirement(1991, 'mukund'));
+console.log (yearUnitRetirement(1980, 'Raj'));
+*/
