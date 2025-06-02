@@ -83,3 +83,49 @@ years`;
 console.log (yearUnitRetirement(1991, 'mukund'));
 console.log (yearUnitRetirement(1980, 'Raj'));
 */
+
+
+
+
+/// Calling A function inside A Function
+/*
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${applePieces} piece of apple and ${orangePieces} pieces of orange.`;
+    retun juice;
+
+}
+console.log(fruitProcessor(2,3));
+*/
+
+
+
+
+
+/// Reviewing Functions
+
+ const calcAge = function(birthYear){
+    return 2025 - birthYear;
+ }
+
+ const yearUntilRetirement = function (birthYear, firstName){
+    const age = calcAge(birthYear);
+    const retirement =65 - age;
+
+    if (retirement > 0){
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement;
+    }else {
+        console.log(`${firstName} has already retired`);
+        return -1;
+    }
+ }
+
+ console.log(yearUntilRetirement(2005, 'mukund'));
+ console.log(yearUntilRetirement(1930,'buddy'))
