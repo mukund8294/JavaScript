@@ -276,3 +276,65 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
 */
+
+
+
+
+
+/// Introduction to object
+/*
+const mukundArray = [
+    'mukund',
+    'kumar',
+    2025 - 2005,
+    'student',
+    ['sourav', 'raj','hira']
+];
+
+const mukund = {
+    firstName: 'mukund',
+    lastName: 'kumar',
+    age: 2025 - 2005,
+    job: 'student',
+    friends: ['sourav', 'raj', 'hira']
+};
+*/
+
+
+/////////object
+// Dot vs Bracket Notation
+const mukund = {
+    firstName: 'mukund',
+    lastName: 'kumar',
+    age: 2025 - 2005,
+    job: 'student',
+    friends: ['sourav', 'raj', 'hira']
+};
+console.log(mukund);
+
+console.log(mukund.lastName);
+console.log(mukund['lastName']);
+
+const nameKey = 'Name';
+console.log(mukund['first' + nameKey]);
+console.log(mukund['last' + nameKey]);
+
+//console.log(mukund.'last' + nameKey) --> Wrong way
+
+const interestedIn = prompt('What do you whant to know about mukund? Choose between firstName, lastName, age, profession, and friends');
+
+if (mukund[interestedIn]) {
+    console.log(mukund[interestedIn]);
+}else{
+    console.log('Wrong request! Choose between firstName, lastName, age, profession, and friends');
+}
+mukund.location = 'hazaribag';
+mukund['email'] = 'balmukund8294@gmail.com';
+console.log(mukund);
+
+
+//  Challenge 
+// mukund has 3 friends, and his best friend is called raj
+
+
+console.log(`${mukund.firstName} has ${mukund.friends.length} friends, and his best friend is called ${mukund.friends[1]}`);
