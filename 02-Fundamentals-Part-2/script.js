@@ -436,7 +436,7 @@ if (mark.bmi > john.bmi) {
 
 
 //////Iteration the for loop
-
+/*
 // console.log('Lifting weights repetition 1');
 // console.log('Lifting weights repetition 2');
 // console.log('Lifting weights repetition 3');
@@ -452,5 +452,98 @@ if (mark.bmi > john.bmi) {
 // for loop keeps running while condition is true
 
 for(let rep = 1; rep <=30; rep++) {
-    console.log(`Lifting wights repetition {rep}`);
+    console.log(`Lifting wights repetition ${rep}`);
+}
+    */
+
+
+
+
+
+//////Looping, Arrays, Breaking Condition 
+/*
+const mukund = [
+    'mukund',
+    'kumar',
+    2025-2005,
+    'Student',
+    ['raj', 'sourav', 'hira']
+];
+const types = [];
+
+// console.log(mukund[0])
+// console.log(mukund[1])
+// ...
+// console.log(mukund[4])
+// jonas[5] does NOT exist
+
+for (let i = 0; i <mukund.length; i++) {
+
+  // Reading from adii array
+
+
+  console.log(mukund[i], typeof mukund[i]);
+
+  // Filling types array 
+
+  // types[i] = typeof mukund[i];
+
+  types.push(typeof mukund[i]);
+}
+
+console.log(types);
+
+const years = [1995, 2005, 1969, 2021];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2025 - years[i]);
+}
+console.log(ages);
+
+
+// continue and break
+console.log('-----only Strings----')
+for (let i = 0; i < mukund.length; i++) {
+    if (typeof mukund[i] !== 'string') continue;
+
+    console.log(mukund[i], typeof mukund[i]);
+}
+
+console.log('-----Break With Number---')
+for (let i = 0 ; i < mukund.length; i++){
+    if ( typeof mukund[i]==='number') break;
+
+    console.log(mukund[i], typeof mukund[i]);
+
+}
+*/
+
+
+
+
+
+/////// LOOPING BACKWARDS 
+
+const mukund = [
+    'mukund',
+    2025-2005,
+    'Student',
+    ['sourva', 'raj', 'hira']
+];
+
+// 0, 1, ..., 4
+// 4, 3, .
+  
+
+for (let i = mukund.length - 1; i >= 0; i--) {
+  console.log(i, mukund[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-------- Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weight repetition ${rep}`);
+    }
 }
