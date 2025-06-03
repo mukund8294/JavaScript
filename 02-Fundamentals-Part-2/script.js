@@ -303,6 +303,7 @@ const mukund = {
 
 /////////object
 // Dot vs Bracket Notation
+/*
 const mukund = {
     firstName: 'mukund',
     lastName: 'kumar',
@@ -338,3 +339,92 @@ console.log(mukund);
 
 
 console.log(`${mukund.firstName} has ${mukund.friends.length} friends, and his best friend is called ${mukund.friends[1]}`);
+*/
+
+
+
+
+
+
+///////// OBJECT METHODS //
+/*
+const jonas = {
+  firstName: 'mukund',
+  lastName: 'kumar',
+  birthYear: 2000,
+  profession: 'Student',
+  friends: ['sourav', 'raj', 'hira'],
+  hasDrivingLicense: true,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // }
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${jonas.profession}, and he has ${this.hasDrivingLicense ? 'a' : 'no'} driving license.`
+  }
+};
+
+console.log(jonas.calcAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+
+// Challenge
+// "Jonas is a 46-year old teacher, and he has a driver's license"
+
+console.log(jonas.getSummary());
+*/
+
+ 
+
+
+
+
+///Coding Challenge  # 3
+
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+const john = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+mark.calcBMI();
+john.calcBMI();
+
+console.log(mark.bmi, john.bmi);
+
+// "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+
+if (mark.bmi > john.bmi) {
+  console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`)
+} else if (john.bmi > mark.bmi) {
+  console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`)
+}
