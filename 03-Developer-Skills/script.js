@@ -76,3 +76,21 @@ const measureKelvin = function () {
 /// A> IDENTIFY
 console.log(measureKelvin());
 */
+
+//**** Challenge - 1  ****//
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+console.log('... ${data[0]} C ... ${data1[1]} C ... ${data1[2]} C ...');
+
+const printForecast = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]} C' in ${i + 1} days ... `;
+  }
+  console.log('...' + str);
+};
+printForecast(data1);
+
+/////// THE END ////// COMPLETED///////
