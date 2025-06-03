@@ -479,7 +479,7 @@ const types = [];
 
 for (let i = 0; i <mukund.length; i++) {
 
-  // Reading from adii array
+  // Reading from MUKUND array
 
 
   console.log(mukund[i], typeof mukund[i]);
@@ -524,7 +524,7 @@ for (let i = 0 ; i < mukund.length; i++){
 
 
 /////// LOOPING BACKWARDS 
-
+/*
 const mukund = [
     'mukund',
     2025-2005,
@@ -547,6 +547,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
     console.log(`Lifting weight repetition ${rep}`);
     }
 }
+    */
 
 
 
