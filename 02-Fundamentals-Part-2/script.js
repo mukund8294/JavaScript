@@ -1,6 +1,6 @@
 /// Hello, Buddy......
 
-'use strict';
+"use strict";
 /* 
 let hasDriversLicense = false;
 constpassTest = true;
@@ -12,10 +12,6 @@ if(hasDriversLicense) console.log('I can drive :D');
 // const private = 534:
 
 */
-
-
-
-
 
 //////////////  Functions
 
@@ -42,10 +38,6 @@ const appleOrange = fruitProcessor(10,5);
 console.Log(appleOrange.juice);
 */
 
-
-
-
-
 /*
 // Funcction Declaration
 function calcAge1(birthyear) {
@@ -62,8 +54,6 @@ const age2 = calcAge2(2030);
 
 console.log(age1, age2);
 */
-
-
 
 //// Arrow functions ///
 /*
@@ -84,9 +74,6 @@ console.log (yearUnitRetirement(1991, 'mukund'));
 console.log (yearUnitRetirement(1980, 'Raj'));
 */
 
-
-
-
 /// Calling A function inside A Function
 /*
 function cutFruitPieces(fruit) {
@@ -103,10 +90,6 @@ function fruitProcessor(apples, oranges) {
 }
 console.log(fruitProcessor(2,3));
 */
-
-
-
-
 
 /// Reviewing Functions
 
@@ -132,11 +115,7 @@ const calcAge = function(birthYear){
  console.log(yearUntilRetirement(1930,'buddy'));
 */
 
-
-
-
-
- // Coding Challenge #1
+// Coding Challenge #1
 /*
  const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
@@ -169,10 +148,6 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 */
-
-
-
-
 
 // hold
 
@@ -218,11 +193,6 @@ const ages = [calcAge(years[0]), calcAge(years[1]),calcAge(years[years.length - 
 console.log(ages);
 */
 
-
-
-
-
-
 //////// Basic Array Operation
 /*
 // add elements
@@ -234,7 +204,6 @@ console.log(newLength);
 friends.unshift('hello');
 console.log(friends);
 */
-
 
 //**** Remove elements ****//
 
@@ -257,12 +226,6 @@ if (friends.includes('raj')) {
 }
 */
 
-
-
-
-
-
-
 /////  Coding Challenge #2
 /*
 const calcTip = function (bill) {
@@ -276,10 +239,6 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 
 console.log(bills, tips, totals);
 */
-
-
-
-
 
 /// Introduction to object
 /*
@@ -299,7 +258,6 @@ const mukund = {
     friends: ['sourav', 'raj', 'hira']
 };
 */
-
 
 /////////object
 // Dot vs Bracket Notation
@@ -340,11 +298,6 @@ console.log(mukund);
 
 console.log(`${mukund.firstName} has ${mukund.friends.length} friends, and his best friend is called ${mukund.friends[1]}`);
 */
-
-
-
-
-
 
 ///////// OBJECT METHODS //
 /*
@@ -388,11 +341,6 @@ console.log(jonas.age);
 console.log(jonas.getSummary());
 */
 
- 
-
-
-
-
 ///Coding Challenge  # 3
 /*
 const mark = {
@@ -430,11 +378,6 @@ if (mark.bmi > john.bmi) {
 }
   */
 
-
-
-
-
-
 //////Iteration the for loop
 /*
 // console.log('Lifting weights repetition 1');
@@ -456,11 +399,7 @@ for(let rep = 1; rep <=30; rep++) {
 }
     */
 
-
-
-
-
-//////Looping, Arrays, Breaking Condition 
+//////Looping, Arrays, Breaking Condition
 /*
 const mukund = [
     'mukund',
@@ -519,11 +458,7 @@ for (let i = 0 ; i < mukund.length; i++){
 }
 */
 
-
-
-
-
-/////// LOOPING BACKWARDS 
+/////// LOOPING BACKWARDS
 /*
 const mukund = [
     'mukund',
@@ -549,12 +484,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
 }
     */
 
-
-
-
-
-
-/////// WHILE LOOP 
+/////// WHILE LOOP
 /*
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}`);
@@ -575,12 +505,7 @@ while (dice !== 6) {
 }
   */
 
-
-
-
-
-
-///////Coding  CHALLENGE - #4 
+///////Coding  CHALLENGE - #4
 /*
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
@@ -610,6 +535,6 @@ console.log(calcAverage(tips));
 
 */
 
-
-
+//////
+//////////
 /////////////////////    COMPLETED  /////THE END //////
