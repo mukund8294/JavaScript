@@ -227,6 +227,7 @@ console.log('After marriage:', marriedJessica);
 
 // marriedJessica = {};
 
+//
 // Copying objects
 const jessica2 = {
   firstName: 'Jessica',
