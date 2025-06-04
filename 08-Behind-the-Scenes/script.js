@@ -94,3 +94,40 @@ console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
 */
+
+//.
+
+//
+
+// this keyword practice
+/*
+console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2027 - birthYear);
+  //console.log(this)
+};
+calcAge(1995);
+
+const calcAgeArrow = birthYear => {
+  console.log(2025 - birthYear);
+  console.log(this);
+};
+calcAge(1995);
+
+const Raj = {
+  year: 2025,
+  calcAge: function () {
+    console.log(this);
+    console.log(2025 - this.year);
+  },
+};
+Raj.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = Raj.calcAge;
+matilda.calcAge();
+*/
