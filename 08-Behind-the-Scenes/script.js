@@ -245,3 +245,5 @@ jessicaCopy.family.push('John');
 console.log('Before marriage:', jessica2);
 console.log('After marriage:', jessicaCopy);
 */
+
+//////// the end ///////  completed///////
