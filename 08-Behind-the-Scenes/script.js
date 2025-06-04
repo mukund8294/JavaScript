@@ -208,6 +208,7 @@ console.log('Me:', me);
 */
 
 // 2nd example
+/*
 let lastName = 'Williams';
 let oldLastName = lastName;
 lastName = 'Davis';
@@ -242,3 +243,4 @@ jessicaCopy.family.push('John');
 
 console.log('Before marriage:', jessica2);
 console.log('After marriage:', jessicaCopy);
+*/
