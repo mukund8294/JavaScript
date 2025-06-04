@@ -2,8 +2,8 @@
 
 //
 
-//
-
+//Destructuring Array
+/*
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
@@ -36,7 +36,7 @@ main = secondary;
 secondary = temp;
 console.log(main, secondary);
 */
-
+/*
 [main, secondary] = [secondary, main];
 console.log(main, secondary);
 
@@ -46,7 +46,6 @@ const [starter, mainCourse] = restaurant.order(2, 0);
 console.log(starter, mainCourse);
 
 //Nested destructuring.........
-
 const nested = [2, 4, [5, 6]];
 
 //const [i, ,j] = nested;
@@ -57,3 +56,8 @@ console.log(i, j, k);
 
 const [p, q, r = 1] = [8, 9];
 console.log(p, q, r);
+*/
+
+///
+/////
+///////
