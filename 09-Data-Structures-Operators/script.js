@@ -701,7 +701,7 @@ for (const [day, { open, close }] of entries) {
 
 ////// Coding Challenge #2
 
-///// add more code from above code
+///// add more code from above code  429  to 468...
 /*
 // 1.
 for (const [i, player] of game.scored.entries())
@@ -734,4 +734,50 @@ for (const player of game.scored) {
 
 ////
 ////////
-////////////////////////////
+////////////////////////////////
+
+/// add more code from 585 to 629
+
+// Sets.....
+/*
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet);
+
+console.log(new Set('mukund'));
+
+console.log(ordersSet.size);
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+ordersSet.delete('Risotto');
+// ordersSet.clear();
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+
+// Example
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+);
+
+console.log(new Set('mukundkumar').size);
+*/
+
+///
+//////
+////////////////////////////////////////////
+// part --#4
+
+//
