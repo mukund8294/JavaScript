@@ -3,6 +3,7 @@
 ///
 /////
 /////////////////////////////////////
+
 // Selecting elements
 
 const player0El = document.querySelector('.player--0');
@@ -19,8 +20,7 @@ const btnHold = document.querySelector('.btn--hold');
 
 let scores, currentScore, activePlayer, playing;
 
-// Starting conditions
-
+// Starting condition
 const init = function () {
   scores = [0, 0];
   currentScore = 0;
