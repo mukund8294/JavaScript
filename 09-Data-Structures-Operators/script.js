@@ -910,8 +910,8 @@ for (const [min, event] of gameEvents) {
 
 /////
 /////lecture : wORKING___wITH __Strings  part #1
-
-const airline = 'AIR Indira';
+/*
+const airline = 'TAP AIR Portugal';
 const plane = 'A320';
 
 console.log(plane[0]);
@@ -935,5 +935,22 @@ console.log(airline.slice(0, airline.indexOf('
 
   console.log(airline.slice(-2));
   console.log(airline.slice(1, -1));
-  
 
+
+const checkMiddleSeat = function(seat)  {
+//// B and E are middle seats..
+const s = seat.slice(-1);
+if ( s === 'B' || s === 'E') console.log('You got the middle seat ');
+else console.log('you got luvky ');
+
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+
+console.log(new String('jonas'));
+console.log(typeof new String('jonas'));
+
+console.log(typeof new String('jonas').slice(1));
+*/
