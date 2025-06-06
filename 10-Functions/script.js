@@ -113,10 +113,10 @@ document.body.addEventListener('click', high5);
 
 ///Functions Returning Functions.....
 
-const greet = function(greeting) {
-    return function(name) {
-        console.log(`${greeting} ${name}`);
-    };
+const greet = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
 };
 
 const greeterHey = greet('Hey');
@@ -125,14 +125,15 @@ greeterHey('raj');
 
 greet('Hello')('radhe');
 
-
 // Challenge ........
 
-const greetArr = greeting => Name => console.log(${greeting} ${Name});
+const greetArr = greeting => Name => console.log(`${greeting} ${Name}`);
 
 greetArr('Hiiii')('raj,,,');
-
 
 /////
 //////
 //////////////////////////////////////////////
+
+///
+//// The call and apply Methods......
