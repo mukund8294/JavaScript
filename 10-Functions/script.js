@@ -37,4 +37,35 @@ createBooking('LH123', undefined, 1000);
 ///////
 ////////////////////////////////////////////////
 
-//
+//// how to passing Arguments Works_ Value vs. Reference.
+const flight = 'LH234';
+const mukund = {
+  name: 'Mukund Kumar',
+  passport: 829497458848,
+};
+
+const checkIn = function (flightNum, passenger) {
+  flightNum = 'LH999';
+  passenger.name = 'Mr.' + passenger.name;
+
+  if (passenger.name === 829497458848) {
+    alert('Checked in');
+  } else {
+    alert('Wrong passport!');
+  }
+};
+
+// checkIn(flight,mukund);
+// console.log(flight);
+// console.log(mukund);
+
+//////IS the same as doing ......
+//const flightNum = flight;
+//const passenger  = mukund;
+
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 100000000000);
+};
+
+newPassport(mukund);
+checkIn(flight, mukund);
