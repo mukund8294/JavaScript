@@ -137,3 +137,54 @@ greetArr('Hiiii')('raj,,,');
 
 ///
 //// The call and apply Methods......
+
+const air_india = {
+  airline: 'air india',
+  iataCode: 'LH',
+  bookings: [],
+  // book: function() {}
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+
+    this.bookings.push(`{ flight: ${this.iataCode}${flightNum}, name}`);
+  },
+};
+
+air_india.book(1301, ' raj');
+air_india.book(1304, 'hira');
+console.log(air_india);
+
+const eurowings = {
+  airline: 'Eurowings',
+  iataCode: 'EW',
+  bookings: [],
+};
+
+const book = air_india.book;
+
+/// Doesn't work.....
+// book(1220, 'ujjwal');
+
+book.call(eurowings, 1220, 'ujjwal');
+console.log(eurowings);
+
+book.call(air_india, 1617, 'radhe');
+console.log(air_india);
+
+const swiss = {
+  airline: 'Swiss Air Lines',
+  iataCode: 'LX',
+  bookings: [],
+};
+
+book.call(swiss, 1012, 'ray');
+console.log(swiss);
+
+// Apply method
+const flightData = [1233, 'bhawesh'];
+book.apply(swiss, flightData);
+console.log(swiss);
+
+book.call(swiss, ...flightData);
