@@ -388,6 +388,48 @@ const transferFee2 = 1_500;
 const PI = 3.1415;
 console.log(PI);
 
-console.log(Number('230_000'));
+console.log(Number('230_000')); //// output is NaN
+
 console.log(parseInt('230_000'));
 */
+
+///////////************************************************************/ *////////////////////
+
+////  Working with BigInt.,,,,,,,,,,,
+
+/*
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(2 ** 53 + 1);
+console.log(2 ** 53 + 2);
+console.log(2 ** 53 + 3);
+console.log(2 ** 53 + 4);
+
+console.log(7667888654334569876543456n);
+console.log(BigInt(634567645));
+
+///// Operations,,,,,,,,,,
+console.log(10000n + 10000n);
+console.log(6534567845678945678456n * 100000n);
+// console.log(Math.sqrt(16n));
+
+const huge = 456789456789456787n;
+const num = 23;
+console.log(huge * BigInt(num));
+
+//// Exceptions..,,,,...,,.,.,.,.,.
+console.log(20n > 15);
+console.log(20n === 20);
+console.log(typeof 20n);
+console.log(20n == '20');
+
+console.log(huge + ' is REALLY big!!!');
+
+//// Divisions,.,.,.,.,.,,,.,.,,.,
+console.log(11n / 3n);
+console.log(10 / 3);
+*/
+
+////////,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,/////////////////
+
+//////////// Creating Dates,,,,,,,,,,,,,,,,,,
