@@ -74,4 +74,10 @@ checkIn(flight, mukund);
 /////
 //////////////////////////////////////////////
 
+//First-Class and Higher-Order Functions.....
 //
+///
+///Functions Accepting Callback Functions.
+const oneWord = function (str) {
+  return;
+};
