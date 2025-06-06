@@ -250,4 +250,7 @@ btnSort.addEventListener('click', function (e) {
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
-// LECTURES
+
+//////// LECTURES....................
+
+//////  Converting and Checking Numbers.................
