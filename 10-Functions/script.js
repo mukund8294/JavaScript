@@ -152,8 +152,8 @@ const air_india = {
   },
 };
 
-air_india.book(1301, ' raj');
-air_india.book(1304, 'hira');
+air_india.book(239, ' raj');
+air_india.book(239, 'hira');
 console.log(air_india);
 
 const eurowings = {
@@ -167,10 +167,10 @@ const book = air_india.book;
 /// Doesn't work.....
 // book(1220, 'ujjwal');
 
-book.call(eurowings, 1220, 'ujjwal');
+book.call(eurowings, 23, 'ujjwal');
 console.log(eurowings);
 
-book.call(air_india, 1617, 'radhe');
+book.call(air_india, 23, 'radhe');
 console.log(air_india);
 
 const swiss = {
@@ -179,12 +179,72 @@ const swiss = {
   bookings: [],
 };
 
-book.call(swiss, 1012, 'ray');
+book.call(swiss, 583, 'ray');
 console.log(swiss);
 
 // Apply method
-const flightData = [1233, 'bhawesh'];
+const flightData = [583, 'bhawesh'];
 book.apply(swiss, flightData);
 console.log(swiss);
 
 book.call(swiss, ...flightData);
+
+////
+/////////////
+/////////////////////////
+
+///continue...
+
+////////The bind Method..........
+
+// book.call(eurowings, 23, 'ujjwal');
+
+const bookEW = book.bind(eurowings);
+const bookLH = book.bind(air_india);
+const bookLX = book.bind(swiss);
+
+bookEW(23, ' ujjwal');
+
+const bookEW23 = book.bind(eurowings, 23);
+bookEW23('raj');
+bookEW23('hira');
+
+//// With Event Listeners.....
+air_india.planes = 300;
+air_india.buyPlane = function () {
+  console.log(this);
+
+  this.planes++;
+  console.log(this.planes);
+};
+
+// air_india.buyPlane();
+document
+  .querySelector('.buy')
+  .addEventListener('click', air_india.buyPlane.bind(air_india));
+
+/// Partial application.....
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
+
+const addVAT = addTax.bind(null, 0.23);
+// addVAT = value => value + value * 0.23;
+
+console.log(addVAT(100));
+console.log(addVAT(23));
+
+const addTaxRate = function (rate) {
+  return function (value) {
+    return value + value * rate;
+  };
+};
+const addVAT2 = addTaxRate(0.23);
+console.log(addVAT2(100));
+console.log(addVAT2(23));
+
+//////
+//////
+
+////////////////////////////////////////////////
+
+//Coding Challenge #1.......
