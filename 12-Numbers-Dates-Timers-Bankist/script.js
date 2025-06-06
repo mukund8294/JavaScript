@@ -540,3 +540,12 @@ setInterval(function () {
   console.log(now);
 }, 1000);
 */
+
+//////////////////..................................................//////////////////
+
+///////  Implementing a Countdown Timer......
+
+//add more code in above, first part of code area.
+
+////////
+///////////////  THE END /////////  COMPLETED///////
