@@ -141,7 +141,7 @@ greetArr('Hiiii')('raj,,,');
 
 ///
 //// The call and apply Methods......
-
+/*
 const air_india = {
   airline: 'air india',
   iataCode: 'LH',
@@ -192,6 +192,7 @@ book.apply(swiss, flightData);
 console.log(swiss);
 
 book.call(swiss, ...flightData);
+*/
 
 ////
 /////////////
