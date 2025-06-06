@@ -5,7 +5,7 @@
 //// Functions...
 ////////////////////////////////////////////////
 ///// Default Parameters.....
-
+/*
 const booking = [];
 
 const createBooking = function (
@@ -32,7 +32,7 @@ createBooking('LH123', 2);
 createBooking('LH123,5');
 
 createBooking('LH123', undefined, 1000);
-
+*/
 ///
 ///////
 ////////////////////////////////////////////////
@@ -344,3 +344,7 @@ console.dir(booker);
 //
 ////
 /////////////////////////////////////////\
+
+/// More Closure Examples.......
+
+let f;
