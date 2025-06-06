@@ -203,7 +203,7 @@ book.call(swiss, ...flightData);
 ////////The bind Method..........
 
 // book.call(eurowings, 23, 'ujjwal');
-
+/*
 const bookEW = book.bind(eurowings);
 const bookLH = book.bind(air_india);
 const bookLX = book.bind(swiss);
@@ -246,6 +246,7 @@ const addTaxRate = function (rate) {
 const addVAT2 = addTaxRate(0.23);
 console.log(addVAT2(100));
 console.log(addVAT2(23));
+*/
 
 //////
 //////
