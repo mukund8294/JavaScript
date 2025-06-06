@@ -515,3 +515,11 @@ console.log(
   new Intl.NumberFormat(navigator.language, options).format(num)
 );
 */
+
+////...........................................................................//////////
+
+//////  Timers_ setTimeout and setInterval.......
+
+//// adding more code in above codes,,,
+
+////////setTimeout,,,,,,,,,
