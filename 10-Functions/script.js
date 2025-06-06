@@ -115,7 +115,7 @@ document.body.addEventListener('click', high5);
 //
 
 ///Functions Returning Functions.....
-
+/*
 const greet = function (greeting) {
   return function (name) {
     console.log(`${greeting} ${name}`);
@@ -133,6 +133,7 @@ greet('Hello')('radhe');
 const greetArr = greeting => Name => console.log(`${greeting} ${Name}`);
 
 greetArr('Hiiii')('raj,,,');
+*/
 
 /////
 //////
