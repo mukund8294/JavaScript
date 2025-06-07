@@ -188,3 +188,39 @@ setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
 //   alert('onmouseenter: Great! You are reading the heading :D');
 // };
 */
+
+////...........................................................................................//////
+
+///// 010 Event Propagation in Practice.....
+
+/*
+// rgp (255,255,255)
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + min);
+const randomColor = () =>
+  `rgb(${randomInt(0, 255)}, ${randomInt(0, 255)},${randomInt(0, 255)})`;
+
+document.querySelector('.nav_link').addEventListener('click', function (e) {
+  this.style.backgroundColor = randomColor();
+  console.log('LINK', e.target, e.currentTarget);
+  console.log(e.currentTarget === this);
+
+  //stop propagation
+  //e.stopPropagation();
+});
+
+document.querySelector('.nav_links').addEventListener('click',function (e){
+  this.style.backgroundColor = randomColor();
+  console.log('CONTAINER', e.target, e.currentTarget);
+  
+});
+document.querySelector('.nav_links').addEventListener('click',function (e){
+  this.style.backgroundColor = randomColor();
+  console.log('NAV', e.target, e.currentTarget);
+},
+true
+);
+*/
+
+////////...................................................................................//////////
+
+/////Delegation_ Implementing Page Navigation.....
