@@ -301,3 +301,33 @@ tabsContainer.addEventListener('click',function(e){
 
 });
 */
+
+///////.................................................................//////////
+
+////014 Passing Arguments to Event Handlers....
+
+/*
+///Menu fade animation
+navigator.addEventListener('mouseover', function (e) {
+  if (e.target.classList.contains('nav_link')) {
+    const link = e.target;
+    const siblings = link.closest('.nav').querySelector('img');
+
+    siblings.forEach(el => {
+      if (el !== link) el.style.opacity = this;
+    });
+    localStorage.style.opacity = this;
+  }
+});
+
+/// passing "argument" into handler
+navigator.addEventListener('mouseover', handleHover.bind(0,5));
+navigator.addEventListener('mouseover', handleHover.bind(1));
+*/
+
+//////..........................................................................................////
+
+/// 015 Implementing a Sticky Navigation_ The Scroll Event.....
+
+///Sticky Navigation
+window.addEventListener('');
