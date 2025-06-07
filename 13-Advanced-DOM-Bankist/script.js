@@ -329,5 +329,15 @@ navigator.addEventListener('mouseover', handleHover.bind(1));
 
 /// 015 Implementing a Sticky Navigation_ The Scroll Event.....
 
+/*
 ///Sticky Navigation
-window.addEventListener('');
+const initialCoords = section1.getBoundingClientRect();
+console.log(initialCoords);
+window.addEventListener('scroll', function () {
+  console.log(window.scrollY);
+
+  if (this.window.scrollY > initialCoords.top)
+    this.navigator.classList.add('sticky');
+  else this.navigator.classList.add('sticky');
+});
+*/
