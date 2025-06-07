@@ -269,3 +269,35 @@ console.log(h1.parentElement.children);
   if (el !== h1) el.computedStyleMap.transform = 'scale(0.5)';
 });
 */
+
+/////...................................................................................../////////
+
+//////013 Building a Tabbed Component......
+
+/*
+///Tabbed component
+const tabs = document.querySelectorAll('.operations_tab');
+const tabsContainer = document.querySelectorAll('.operations_tab-container');
+const tabsContent = document.querySelectorAll('.operations_tab-content');
+
+tabsContainer.addEventListener('click',function(e){
+  const clicked = e.target.closest('.operations_tab');
+  console.log(clicked);
+
+  ///Guard clause
+  if(!clicked) return;
+
+  /// Remove active classes
+  tabs.forEach(t => t.classList.remove('operations_tab --active'));
+  tabsContent.forEach(c=> c.classList.remove('operations_content--active'));
+
+  // Activate tab
+  clicked.classList.add('operations_tab --active');
+
+  /// Activate content area 
+  document
+  .querySelector(`.operations_content--${clicked.dataset.tab}`)
+  .classList.add('operations_tab --active');
+
+});
+*/
