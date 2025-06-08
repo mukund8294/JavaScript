@@ -4,6 +4,7 @@
 
 ///// Constructor Functions and the new Operator.....
 
+/*
 const person = function (firstName, birthYear) {
   /// Instance properties....
   this.firstName = firstName;
@@ -16,7 +17,7 @@ const person = function (firstName, birthYear) {
 };
 
 const mukund = new Person('Mukund', 2005);
-console.log(jonas);
+console.log(mukund);
 
 // 1. New {} is created
 // 2. function is called, this = {}
@@ -28,3 +29,36 @@ const jack = new Person('Jack', 1975);
 console.log(matilda, jack);
 
 console.log(jonas instanceof Person);
+*/
+
+////.............................................................................................../////
+
+///// Prototypes.....
+
+/*
+console.log(personalbar.prototype);
+
+personalbar.prototype.calcAge = function () {
+  console.log(2037 - this.birthYear);
+};
+
+mukund.calcAge();
+matilda.calcAge();
+
+console.log(mukund__proto__);
+console.log(mukund__proto__ === personal.prototype);
+
+console.log(personal.prototype.isPrototyprOf(mukund));
+console.log(personal.prototype.isPrototyprOf(jonas));
+console.log(personal.prototype.isPrototyprOf(person));
+
+/// .prototypeOfLinkedObjects....
+
+personalbar.prototype.species = 'Homo Sapiens';
+console.log(mukund.species, matilda.species);
+
+console.log(mukund.hasOwnProperty('firstName'));
+console.log(mukund.hasOwnProperty('species'));
+*/
+
+////................................................................................................./////
