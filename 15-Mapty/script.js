@@ -61,7 +61,36 @@ let map, mapEvent;
 class App {
   constructor() {}
 
-  _getPosition() {}
+  _getPosition() {
+    if (navigator.geolocation)
+      navigator.geolocation.getCurrentPosition(
+        function (position) {
+          const { laltiutde } = position.coords;
+          const { longitude } = position.coords;
+          console.log(`https://www.google.pt/maps/@${laltiutde},${longitude}`);
+
+          const coords = [laltiutde, longitude];
+
+          map = L.map('map').setView(coords, 13);
+          /// console.log(map);
+
+          L.tileLayer('https//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution:
+              '&copy; <a href ="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributtors',
+          }).addTo(map);
+
+          /// Handling clicks on map.....
+          map.on('click', function (mapE) {
+            mapEvent = mapE;
+            form.classList.remove('hidden');
+            inputDistance.focus();
+          });
+        },
+        function () {
+          alert('Could not get your position');
+        }
+      );
+  }
 
   _loadMap() {}
 
@@ -71,35 +100,6 @@ class App {
 
   _newWorkout() {}
 }
-
-if (navigator.geolocation)
-  navigator.geolocation.getCurrentPosition(
-    function (position) {
-      const { laltiutde } = position.coords;
-      const { longitude } = position.coords;
-      console.log(`https://www.google.pt/maps/@${laltiutde},${longitude}`);
-
-      const coords = [laltiutde, longitude];
-
-      map = L.map('map').setView(coords, 13);
-      /// console.log(map);
-
-      L.tileLayer('https//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-        attribution:
-          '&copy; <a href ="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributtors',
-      }).addTo(map);
-
-      /// Handling clicks on map.....
-      map.on('click', function (mapE) {
-        mapEvent = mapE;
-        form.classList.remove('hidden');
-        inputDistance.focus();
-      });
-    },
-    function () {
-      alert('Could not get your position');
-    }
-  );
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
