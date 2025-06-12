@@ -17,16 +17,9 @@ const inputElevation = document.querySelector('.form__input--elevation');
 
 //////// hhold////////////////////
 ////////hold/////////////
-;;''uydrtfghkyfghb
-druhbkjcgvh
-ytugijk
-hgbhn
-uftydryfgtxfcgutffvgjigkhb
-hbjlnvhbjln
-vgbhjn
-
 
 ////////////////////.....Start....../////////////////
 
-
 /////////////....HELLo,,, BUddy....////////////
+
+////................................................................................................//////
