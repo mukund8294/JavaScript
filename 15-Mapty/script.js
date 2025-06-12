@@ -73,24 +73,24 @@ if (navigator.geolocation)
           '&copy; <a href ="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributtors',
       }).addTo(map);
 
-      map.on('click', function (mapEvent){
+      map.on('click', function (mapEvent) {
         console.log(mapEvent);
-        const { lat, lng }  = mapEvent.latlng;
+        const { lat, lng } = mapEvent.latlng;
 
-      L.marker(lat, lng) 
-        .addTo(map)
-        .bindPopup(
-          L.popup({
-            maxWidth: 250,
-            minWidth: 100,
-            autoClose: false,
-            closeOnClick: false;
-            className: 'running-popup',
-      })
-        )
-        .setPopupContent('workout')
-        .openPopup();
-        });
+        L.marker(lat, lng)
+          .addTo(map)
+          .bindPopup(
+            L.popup({
+              maxWidth: 250,
+              minWidth: 100,
+              autoClose: false,
+              closeOnClick: false,
+              className: 'running-popup',
+            })
+          )
+          .setPopupContent('workout')
+          .openPopup();
+      });
     },
     function () {
       alert('Could not get your position');
