@@ -364,6 +364,7 @@ btn.addEventListener('click', whereAmI);
 
 //// Coding Challenge-- #2.................
 
+/*
 const wait = function (seconds) {
   return new Promise(function (resolve) {
     setTimeout(resolve, seconds * 1000);
@@ -409,3 +410,10 @@ createImage('img/img-1.jpg')
     return wait(2);
   })
   .catch(err => console.error(err));
+*/
+
+////................................................................................................/////
+
+///Consuming Promises with Async_Await.....
+and;
+////Error Handling With try...catch.....
