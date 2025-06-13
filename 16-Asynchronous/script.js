@@ -134,3 +134,8 @@ setTimeout(() => {
     }, 1000);
   }, 1000);
 }, 1000);
+
+Consuming Promises
+Chaining Promises
+Handling Rejected Promises
+Throwing Errors Manually
