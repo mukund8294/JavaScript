@@ -13,6 +13,7 @@
 
 ////////////////////... HELLO, BUDDY....../////////////////////////////////////////
 
+/*
 const btn = document.querySelector('.btn-country');
 const countriesContainer = document.querySelector('.countries');
 
@@ -46,6 +47,7 @@ const renderCountry = function (data, className = '') {
   countriesContainer.insertAdjacentHTML('beforeend', html);
   countriesContainer.style.opacity = 1;
 };
+*/
 
 //////................................................................................................////
 
