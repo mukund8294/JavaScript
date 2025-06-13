@@ -341,7 +341,18 @@ const whereAmI = function () {
     .then(pos => {
       const { latitude: lat, longitude: lng } = pos.coords;
 
-      return fetch(
+      return fetch(`
         https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}
-      );
+      `);
     })
+    .then(data => {
+      console.log(data);
+      console.log(`You are in ${data.city}, ${data.countryCode}`);
+
+      return fetch(`https://restcountries.com/v2/name/${data.countryCode}`);
+    })
+    .then(data => renderCountry(data[0]))
+    .catch(err => console.error(`${err.message} `));
+};
+
+btn.addEventListener('click', whereAmI);
