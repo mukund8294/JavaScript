@@ -11,16 +11,24 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////...HELLO , 
-/BUDDY........///////////////////////////////////////
+////////////////////...HELLO ,
+/BUDDY......../; //////////////////////////////////////
 
 //////................................................................................................////
 
-const request = new XMLHttpRequest();
-  request.open('GET', https://restcountries.com/v2/name/${country});
-  request.send();
+// XMLHttpRequest
 
-  const html = `
+const getCountryData = function (country) {
+  request.addEventListener('load', function () {
+    const [data] = JSON.parse(this.responseText);
+    console.log(data);
+
+    const request = new XMLHttpRequest();
+
+    request.open('GET', `https://restcountries.com/v2/name/${country}`);
+    request.send();
+
+    const html = `
   <article class="country">
     <img class="country__img" src="${data.flag}" />
     <div class="country__data">
