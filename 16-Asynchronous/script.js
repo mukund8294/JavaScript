@@ -16,8 +16,9 @@
 
 //////................................................................................................////
 
-// XMLHttpRequest
+//// XMLHttpRequest..........
 
+/*
 const getCountryData = function (country) {
   request.addEventListener('load', function () {
     const [data] = JSON.parse(this.responseText);
@@ -50,3 +51,4 @@ const getCountryData = function (country) {
 getCountryData('portugal');
 getCountryData('usa');
 getCountryData('germany');
+*/
