@@ -319,3 +319,29 @@ Promise.reject(new Error('Problem!')).catch(x => console.error(x));
 */
 
 /////.............................................................................................////////
+
+///// Geolocation API........
+const getPosition = function () {
+  return new Promise(function (resolve, reject) {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+};
+
+const whereAmI = function () {
+  getPosition()
+    .then(res => {
+      if (!res.ok) throw new Error(`Problem with geocoding ${res.status}`);
+      return res.json();
+    })
+    .then(res => {
+      if (!res.ok) throw new Error(`Country not found (${res.status})`);
+
+      return res.json();
+    })
+    .then(pos => {
+      const { latitude: lat, longitude: lng } = pos.coords;
+
+      return fetch(
+        https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lng}
+      );
+    })
